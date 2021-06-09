@@ -15,31 +15,26 @@ A system with a login system, and user management
 * Install composer required packages
 ```
 composer install
-
 ```
 
 * Install npm required packages
 ```
 npm install
-
 ```
 
 * Migrate Database
 ```
 php artisan migrate
-
 ```
 
 * Run Database Seeds to import account
 ```
 php artisan db:seed
-
 ```
 
 * Set Application key
 ```
 php artisan key:generate
-
 ```
 
 ### Executing program
@@ -47,7 +42,6 @@ php artisan key:generate
 * Start Server
 ```
 php artisan serve
-
 ```
 
 * Login credentials
@@ -69,6 +63,10 @@ password: admin
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+
+\
+\
+\
 
 ## About Laravel
 
