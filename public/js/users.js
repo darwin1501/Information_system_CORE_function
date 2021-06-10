@@ -120,7 +120,8 @@ const getUsers = async (url = '/userlist')=>{
         if(response.data.data.length === 0){
             document.getElementById('empty-users').classList.remove('hidden');
         }
-
+        // remove no result message on searching
+        document.getElementById('no-result').classList.add('hidden');
         // load the result on table
         generateTable(response.data.data);
         // create pagination
@@ -220,10 +221,7 @@ const addUser = (()=>{
 const searchUser = ()=>{
     // access search inputs property
     const target = event.target || event.srcElement;
-    const username = target.value;
-    // remove no results found message on input
-    //when searching
-    document.getElementById('no-result').classList.add('hidden');
+    const username = target.value;    
     // check if the search value was not empty string
     if(!(username === "")){
         // make http request
